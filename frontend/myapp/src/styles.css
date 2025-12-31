@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+}
+
+.container {
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* KPI Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.card {
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.purple { background: #6c63ff; }
+.blue { background: #3498db; }
+.orange { background: #f39c12; }
+.green { background: #27ae60; }
+
+/* Middle Section */
+.middle {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.box {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.dot.green { background: #27ae60; }
+.dot.yellow { background: #f1c40f; }
+.dot.red { background: #e74c3c; }
+
+/* Buttons */
+.btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #3498db;
+  color: white;
+}
+
+.btn.warn {
+  background: #e67e22;
+}
+
+/* Table */
+.table-box {
+  background: white;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: #eef1f8;
+}
+
+/* Status Tags */
+.high { color: #27ae60; font-weight: bold; }
+.medium { color: #f39c12; font-weight: bold; }
+.low { color: #e74c3c; font-weight: bold; }
+
+.status {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+}
+
+.progress { background: #27ae60; }
+.open { background: #f39c12; }
+.escalated { background: #e74c3c; }
